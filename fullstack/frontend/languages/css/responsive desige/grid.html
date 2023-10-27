@@ -10,24 +10,28 @@
         .container{
             width: 100%;
             display: grid;
-            grid-template-columns: 200px 200px;
-            grid-template-rows: 200px 200px 200px;
+            font-size: 30px;
+            /*grid-template-columns: 200px 200px;
+            grid-template-rows: 200px 200px 200px;*/
+           /* grid-template-columns:repeat(2 400px);
+            grid-template-rows:repeat(2 400px) 200px;*/
+            grid-template-rows: repeat(3,200px);
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
         }
        .box{
-        width:200px;
-        height: 200px;
+       
         background: blue;
-        color: white;
+        border: 2px; color: #121212;
         margin: 20px;
        } 
     </style>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
+        <div class="box">nani</div>
+        <div class="box">mom</div>
+        <div class="box">father</div>
+        <div class="box">brother</div>
+        <div class="box">stster</div>
+        <div class="box">mother in law</div>
     </div>
 </body>
 </html>

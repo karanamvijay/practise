@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .left{
+        background-color: blueviolet;
+        padding: 20px;
+        width: 200%;
+        float: right;
+        margin: 20px;
+      }
+      .main{
+        background-color: black;
+        padding: 20px;
+        width: 200%;
+        float: right;
+        margin: 20px;
+      }
+      .right{
+        background-color: blanchedalmond;
+        padding: 20px;
+        width: 200%;
+        float: right;
+        margin: 20px;
+      }
+      
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; 
+  }
+}
+      </style>
+     <h1>MEDIA QURRY</h1>
+     <p>Resize the browser window.</p>
+     <p>Make sure you reach the breakpoint at 800px when resizing this frame</p>
+     <div class="left"></div>
+     <div class="main"></div>
+     <div class="right"></div>
+
+</body>
+</html>
