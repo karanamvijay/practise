@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function* tiffengiver(){
+            yield "1plate of morning uppmagiver"
+            yield "2 plate of morning dosegiver"
+            yield "3 plate of morning purigiver"
+        }
+        let nani=tiffengiver()
+        console.log("nani",nani.next())
+        console.log("nani",nani.next())
+        console.log("nani",nani.next())
+        console.log("p1",tiffengiver().next())
+        console.log("p2 chinna",tiffengiver().next())
+    </script>
+</body>
+</html>

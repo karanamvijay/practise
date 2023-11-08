@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <input type="text" name="" value="vijay" id="nani">
+    <button onclick="capture()">click here</button>
+    <div id="root1"></div>
+    
+    <input type="text" name="" value="e-mail" id="karanam@gmail.com">
+    <button onclick="capture1()">click here</button>
+    <br>
+    <script>
+        function capture() {
+            let data = document.getElementById('root')
+            let data1 = document.getElementById('nani')
+            data.innerHTML = `hello  ${data1.value}`
+            console.log(data1.value)
+        }
+        function capture1() {
+            let data = document.getElementById('root1')
+            let data1 = document.getElementById('karanam@gmail.com')
+            data.innerHTML = `my email  ${data1.value}`
+            console.log(data1.value)
+        }      
+</script>
+</body>
+</html>

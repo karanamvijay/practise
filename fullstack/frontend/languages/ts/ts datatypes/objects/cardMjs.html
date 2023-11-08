@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="root">
+    <script>
+
+    let item1={
+        title:"indiagr organic",
+        prise:"700₹",
+        Discription:"it's for healthy",
+        img:'2.jpeg'
+    }
+    let item2={
+        title:"murad face cream",
+        prise:"600₹",
+        Discription:"it's face glow cream",
+        img:'110.jpeg'
+    }
+    let item3={
+        title:"chana pinutes",
+        price:"100₹",
+        Discription:"this one so much hot and spyci",
+        img:'133.jpeg'
+    }
+    let item4={
+        title:"badham milk",
+        price:"100₹",
+        discription:"it's was made by prue baham and ammul milk shake",
+        img:'143.jpeg'
+    }
+    let item5={
+        title:"mix fruit bar",
+        price:"200₹",
+        discription:"thos fruit mix made all fruits good healthy",
+        img:'155.jpeg' 
+
+    }   
+    
+    let list=[item1,
+    item2,
+    item3,
+    item4,
+    item5]
+    let data=document.getElementById('root')
+    list.map((item,)=>{
+    
+        let img=document.createElement('img')
+    img.style.height="200px"
+    img.src=item.img
+    data.appendChild(img)
+    
+    })
+    
+    </script>
+   </div> 
+</body>
+</html>
